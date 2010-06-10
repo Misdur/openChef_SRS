@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.6.7)  10 JUN 2010 15:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.6.7)  10 JUN 2010 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -517,9 +517,9 @@ e/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/misdur/.
 texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/misdur/.texmf-var/
 fonts/pk/ljfour/jknappen/ec/eccc1728.600pk></usr/share/texmf-texlive/fonts/type
 1/public/amsfonts/latxfont/line10.pfb>
-Output written on srs.pdf (11 pages, 193959 bytes).
+Output written on srs.pdf (11 pages, 193555 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
+ 595 PDF objects out of 1000 (max. 8388607)
  48 named destinations out of 1000 (max. 500000)
  182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

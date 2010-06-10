@@ -1,0 +1,110 @@
+\chapter{Generalit\`a}
+{\bf \emph{OpenChef}} \`e un software di supporto di gestione, monitoraggio e 
+ottimizzazione delle attivita di ristorazione, approvvigionamento e contabilit\`a.
+  
+Deve:
+\begin{itemize}
+      \item Consentire all'operatore di effettuare un'ordinazione su specifiche del cliente.
+      \item Gestire il flusso delle ordinazioni da evadere in cucina in base alle priorit\`a 
+          e alle specifiche richieste.
+      \item Consentire l'intervento dell'operatore per la rettifica delle ordinazioni.
+      \item Calcolare il conto di un tavolo.
+      \item Effettuare prenotazioni.
+      \item Redazione di bilancio.
+ \end{itemize}
+
+\section{Prospettive del Prodotto}
+    
+{\bf \emph{OpenChef}} \`e costituito da un insieme di palmari wireless, interconnessi 
+con il  sistema centrale e utilizzati dagli operatori.
+Il sistema centrale, regolamenta tutte le azioni per le prenotazioni, gli ordini, 
+le code pietanze e la cucina, il magazzino, la cassa e la contabilit\`a.
+
+\subsection{Interfaccia Utente}
+
+I palmari wireless consentono all'operatore tramite le informazioni acquisite dall'OpenChef 
+di individuare e  segnalare elementi necessari per gestire in modo efficace ed efficiente 
+il monitoraggio delle code pietanze e garantire la corretta esecuzione degli ordini.
+
+\subsubsection{Interrogazione del sistema dal Customer}
+
+Visualizzazione delle modifiche d'ordine, stato dell'ordine nella coda pietanze e residuo 
+tempo di preparazione di un'ordine.
+
+\subsection{Interfaccia Hardware}
+
+L'elaboratore centrale \`e dotato di monitor, tastiera, mouse, unit\ centrale 
+(con disco rigido, memoria, processore, lettore/masterizzatore cd/dvd, scheda di rete), 
+collegamento al sistema centrale tramite rete locale.
+
+A discrezione del committente il numero necessario di palmari da interagire con 
+l'elaboratore centrale.
+
+\subsection{Intefaccia Software}
+
+Operativit\`a del software su tutte le piattaforme hardware supportate dai sistemi operativi: 
+\begin{itemize}
+    \item Microsoft Windows (Xp e superiori) 
+    \item Linux (distribuzioni Debian, Ubuntu e Redhat) 
+    \item Macintosh (Panther e superiori)
+\end{itemize}
+
+\subsection{Intefaccia delle Comunicazioni}
+
+L'elaboratore centrale e i palmari sono connessi via wireless rispondente alle specifiche 802.11 n.
+
+\subsection{Vincoli di Memoria}
+
+{\bf Elaboratore centrale}:
+\begin{itemize}
+    \item 4 Gb di RAM
+    \item 320 Gb HDD (possibilit\`a di cloud computing)
+\end{itemize}
+{\bf Palmare}:
+\begin{itemize}
+    \item Da 64 a 128 Mb di RAM
+    \item Memoria interna da 2 Gb
+\end{itemize}
+
+\section{Funzionalit\`a del Prodotto}
+{\bf \emph{OpenChef}} \`e costituito da una serie di palmari collegati in rete wireless 
+con l'elaboratore centrale che automaticamente gestir\`a tutte le operazioni di routine 
+di coda delle pietanze, controllo delle scorte di magazzino, ordini evasi, cassa 
+e contabilit\`a.
+
+\subsubsection{Il sistema software deve gestire}
+
+\begin{itemize}
+    \item L'effetuazione di nuovi ordini mediante una interfaccia e consentire l'interrogazione 
+        per la disponibilit\`a dei prodotti necessari. Deve essere possibile definire modifiche 
+        dal menu standard e priorit\`a particolari.
+    \item Il controllo delle pietanze in coda. Sulla base delle informazioni ottenute dal 
+        sistema centrale, l'operatore deve poter configurare opportunamente i vari ordini decidendo quali 
+        favorire.
+    \item Stima in tempo reale del coda delle pietanze.
+    \item Proiezione della situazione degli ordini in un intervallo temporale su tutta l'attivit\`a 
+        del ristorante.
+    \item Registrazione di informazioni e dati che indicano i giorni con i livelli massimi di 
+        utenza e i tempi di preparazione per le varie pietanze  che possono essere visualizzati 
+        su palmari per la consultazione dell'operatore.
+\end{itemize}
+
+\section{Caratteristiche Utente}
+Gli utenti destinati all'uso del prodotto sono:
+\begin{itemize}
+    \item {\bf Operatore} deve poter effettuare prenotazioni, effettuare ordini, modifiche d'ordine, 
+        richiesta conto, visione della code pietanze, cancellazione ordine, visione del magazzino.
+    \item {\bf Cliente} si relaziona al sistema tramite l'operatore.
+\end{itemize}
+
+\section{Vincoli}
+    \subsection{Limitazioni hardware}
+        Non \`e possibile calcolare effettuare un numero di prenotazioni superiori al numero 
+        dei palmari operatore disponibili.
+    \subsection{Interfaccia con le altre applicazioni}
+        ...
+    \subsection{Requisiti di linguaggio ad alto livello}
+        ...
+    \subsection{Considerazoni sulla sicurezza}
+        Il sistema consente l'accesso  all'operatore tramite operazione di login che gli permette 
+        l'accesso al sistema per effettuare le operazioni previste.

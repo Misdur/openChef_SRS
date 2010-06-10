@@ -1,0 +1,107 @@
+\chapter{Specifiche dei Requisiti}
+\section{Casi d'Uso}
+\begin{enumerate}
+    \item {\bf Caso d'uso}: \uline{{\bf Ordinazione Tavolo}}
+    \begin{itemize}
+        \item {\bf Attore}: Operatore
+        \item {\bf Input}: Pietanze, Coperti, Numero Tavolo
+        \item {\bf Precondizioni}: Postazione operatore connessa alla rete
+        \item {\bf Output}: Presa carico dell'ordine dalla cucina
+        \item {\bf Postcondizioni}: Conferma dell'ordine all'utente
+        \item {\bf Descrizione scenari}:
+        \begin{itemize}
+            \item \uline {Scenario 1}
+            \begin{itemize}
+                \item Il cliente effettua un ordine all'operatore
+                \item L'operatore inserisce nel sistema pietanze, bevande e 
+                    numero tavolo
+                \item Se tutto disponibile, l'operatore lo comunica al cliente
+                \item Il cliente conferma l'ordine
+                \item Il cliente attende l'evasione dell'ordine
+            \end{itemize}
+            \item \uline {Scenario 2}:
+            \begin{itemize}
+                \item Il cliente effettua un ordine all'operatore
+                \item L'operatore inserisce nel sistema pietanze, bevande e numero tavolo
+                \item Una o pi\`u pietanze non \`e disponibile
+                \item L'operatore segnala la pietanza mancante al sistema centrale
+                \item L'operatore comunica l'impossibilit\`a di evadere l'ordine richiesto al cliente
+            \end{itemize}
+            \item \uline{Scenario 3}:
+            \begin{itemize}
+                \item Il cliente effettua un ordine all'operatore
+                \item L'operatore inserisce nel sistema pietanze, bevande e numero tavolo
+                \item Una o pi\`u pietanze non \`e presente nel database
+                \item L'operatore segnala l'errore del database al sistema centrale
+                \item L'operatore comunica l'impossibilit\`a di evadere l'ordine richiesto al cliente
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \item \uline {{\bf Chiamata prenotazione}}
+    \begin{itemize}
+        \item {\bf Attore}: Operatore
+        \item {\bf Input}: Tipo Prenotazione, Orario Prenotazione, Numero Posti
+        \item {\bf Precondizioni}: Disponibilit\`a Tavoli
+        \item {\bf Output}: Prenotazione presa in carico dal sistema
+        \item {\bf PostCondizioni}: Conferma della prenotazione all'utente
+        \item {\bf Descrizione scenari}:
+        \begin{itemize}
+            \item \uline{{\bf Scenario 1}}:
+            \begin{itemize}
+                \item L'utente chiama per la prenotazione di un tavolo
+                \item L'operatore controlla la disponibilit\`a del tavolo
+                \item L'operatore comunica la disponibilit\`a del tavolo all'utente
+                \item L'utente conferma la prenotazione
+            \end{itemize}
+            \item \uline{{\bf Scenario 2}}:
+            \begin{itemize}
+                \item L'utente chiama per la prenotazione di un men\`u fisso
+                \item L'operatore controlla la disponibilit\`a del men\`u
+                \item L'operatore comunica la disponibilit\`a del men\`u all'utente
+                \item L'utente conferma la prenotazione
+            \end{itemize}
+            \item \uline{{\bf Scenario 3}}
+            \begin{itemize}
+                \item L'utente chiama per la prenotazione di una sala
+                \item L'operatore controlla la disponibilit\`a della sala
+                \item L'operatore comunica la disponibilit\`a della sala
+                \item L'utente concorda il men\`u con il proprietario
+                \item L'utente conferma la prenotazione
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \item \uline {{\bf Richiesta modifica ordine}}
+    \item \uline {{\bf Modifica Coda Pietanze}}
+    \item \uline {{\bf Cancellazione ordine}}
+    \item \uline {{\bf Segnalazione guasto wireless}}
+    \item {\bf Caso d'uso}: \uline{{\bf Richiesta Conto}}
+    \begin{itemize}
+        \item {\bf Attore}: Operatore
+        \item {\bf Input}: Numero Tavolo, Tipo di Conto
+        \item {\bf Precondizioni}: Palmare operatore connesso alla rete
+        \item {\bf Output}: Conferma di stampa conto
+        \item {\bf Postcondizioni}: Nessuna
+        \item {\bf Descrizione Scenari}:
+        \begin{itemize}
+            \item \uline{Scenario 1}:
+            \begin{itemize}
+                \item Il cliente richiede il conto
+                \item L'operatore inserisce nel sistema il numero del tavolo e il 
+                    tipo di conto richiesto
+                \item Ottenute le informazioni, l'operatore le comunica al cliente
+            \end{itemize}
+            \item \uline{Scenario 2}:
+            \begin{itemize}
+                \item Il cliente richiede il conto
+                \item L'operatore inserisce nel sistema il numero del tavolo e il 
+                    tipo di conto richiesto
+                \item Il conto non \`e disponibile a causa di un errore della rete
+                \item L'operatore segnala un errore della sensori rete al sistema centrale
+                \item L'operatore comunica l'impossibilità di il conto in real time e richiede
+                    le pietanze precedentemente ordinate.
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
+            
+

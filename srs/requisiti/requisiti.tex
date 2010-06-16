@@ -71,9 +71,22 @@
         \end{itemize}
     \end{itemize}
     \item \uline {{\bf Richiesta modifica ordine}}
-    \item \uline {{\bf Modifica Coda Pietanze}}
+    \begin{itemize}
+        \item {\bf Attore}: Cameriere
+        \item {\bf Input}: Numero Tavolo, Ordine da Modificare
+        \item {\bf Precondizioni}: Nessuna
+        \item {\bf Output}: Conferma di modifica
+        \item {\bf Postcondizioni}: Nessuna
+        \item {\bf Descizione Scenari}:
+        \begin{itemize}
+            \item \uline{Scenario 1}
+            \begin{itemize}
+                \item Il cliente richiede modifica di un ordine
+                \item Il cameriere effettua la verifica 
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
     \item \uline {{\bf Cancellazione ordine}}
-    \item \uline {{\bf Segnalazione guasto wireless}}
     \item {\bf Caso d'uso}: \uline{{\bf Richiesta Conto}}
     \begin{itemize}
         \item {\bf Attore}: Operatore
@@ -102,6 +115,104 @@
             \end{itemize}
         \end{itemize}
     \end{itemize}
+    \item \uline {{\bf Calcolo Retribuzioni Personale}}
+    \begin{itemize}
+        \item {\bf Attore}: Cassiere
+        \item {\bf Input}: Nome Dipendente, Tipo di Qualifica, Tipo Contratto 
+        \item {\bf Precondizioni}: Nessuna
+        \item {\bf Output}: Conferma Operazione Eseguita
+        \item {\bf Postcondizioni}: Nessuna
+        \item {\bf Descrizione Scenari}:
+        \begin{itemize}
+            \item \uline{Scenario 1}:
+            \begin{itemize}
+                \item L'operatore inserisce nel sistema il nome del dipendente
+                \item L'operatore richiede al sistema la paga della prestazione terminata
+                \item Il sistema calcola l'ammontare della retribuzione
+                \item L'operatore richiede la stampa del documento contabile
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \item \uline {{\bf Gestione Personale}}
+    \begin{itemize} 
+        \item {\bf Attore}: Gestore Personale
+        \item {\bf Input}: Nome Dipendente, Tipo di Qualifica, Tipo Contratto
+        \item {\bf Precondizioni}: Nessuna
+        \item {\bf Output}: Conferma Operazione Eseguita
+        \item {\bf Postcondizioni}: Nessuna
+        \item {\bf Descrizione Scenari}:
+        \begin{itemize}
+            \item \uline{Scenario 1}
+            \begin{itemize}
+                \item L'operatore inserisce nel sistema il nome del dipendente
+                \item L'operatore richiede al sistema l'assunzione del dipendente
+                \item Il sistema conferma l'operazione
+            \end{itemize}
+            \item \uline{Scenario 2}
+            \begin{itemize}
+                \item L'operatore inserisce nel sistema il nome del dipendente
+                \item L'operatore richiede al sistema il licenziamento del dipendente
+                \item Il sistema conferma l'operazione
+            \end{itemize}
+        \end{itemize}     
+    \end{itemize}
+    \item \uline {{\bf Redigi Bilancio}}
+    \begin{itemize}
+        \item {\bf Attore}: Cassiere
+        \item {\bf Input}: Data Chiusura Bilancio, Periodo Copertura Bilancio
+        \item {\bf Precondizioni}: Data Chiusura Bilancio $>$ di Data Apertura, Data di Chiusura $\leq$
+            della data attuale
+        \item {\bf Output}: Bilancio
+        \item {\bf Postcondizioni}: Nessuna
+        \item {\bf Descrizione Scenari}:
+        \begin{itemize}
+            \item \uline{Scenario 1}
+            \begin{itemize}
+                \item Il cassiere richiede il bilancio
+                \item Il cassiere inserisce nel sistema la data di inzio e di termine del
+                    periodo di valutazione del bilancio
+                \item Il sistema calcola il bilancio e lo stampa a video
+            \end{itemize}
+            \item \uline{Scenario 2}
+            \begin{itemize}
+                \item Il cassiere richiede il bilancio
+                \item Il cassiere inserisce nel sistema la data di inzio e di termine del
+                    periodo di valutazione del bilancio
+                \item Il sistema avverte l'utente con un messaggio di warning dell'errato
+                    inserimento dei dati di Input
+            \end{itemize}
+            \item \uline{Scenario 3}
+            \begin{itemize}
+                \item Il cassiere richiede il bilancio
+                \item Il cassiere inserisce nel sistema la data di inzio e di termine del
+                    periodo di valutazione del bilancio
+                \item Il sistema avverte l'utente che il database \`e corrotto
+                \item Il sistema effettua un abort
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \item \uline {{\bf Verifica Scorte}}
+    \begin{itemize}
+        \item {\bf Attore}: Operatore
+        \item {\bf Input}: Magazzino da visionare
+        \item {\bf Precondizioni}: Nessuna
+        \item {\bf Output}: Itemlist delle scorte presenti
+        \item {\bf Postcondizioni}: Le scorte devono sopperire ad almeno 2 giorni di mancata
+            fornitura
+        \item {\bf Descrizione degli Scenari}:
+        \begin{itemize}
+            \item \uline{Scenario 1}
+            \begin{itemize}
+                \item L'operatore richiede al sistema la visione delle scorte all'interno del magazzino
+                \item Il sistema mostra la item list delle scorte
+                \item L'operatore visiona l'item list
+            \end{itemize}
+            \item \uline{Scenario 2}
+            \begin{itemize}
+                \item Il sistema invia un messaggio di warning di "ammanchi" nel magazzino
+                \item L'operatore richieste l'item list degli "ammanchi" al sistema 
+                \item L'operatore effettua l'ordine per la fornitura
+            \end{itemize}
+        \end{itemize}
+    \end{itemize} 
 \end{enumerate}
-            
-

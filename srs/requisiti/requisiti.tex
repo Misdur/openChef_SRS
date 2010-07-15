@@ -4,44 +4,44 @@
     
     \item {\bf Caso d'uso}: \uline{{\bf Ordinazione Tavolo}}
     \begin{itemize}
-        \item {\bf Attore}: Operatore
+        \item {\bf Attore}: Cameriere
         \item {\bf Input}: Pietanze, Coperti, Numero Tavolo
         \item {\bf Precondizioni}: Postazione operatore connessa alla rete
         \item {\bf Output}: Presa carico dell'ordine dalla cucina
         \item {\bf Postcondizioni}: Conferma dell'ordine all'utente
         \item {\bf Descrizione scenari}:
         \begin{itemize}
-            \item \uline {Scenario 1}
+            \item \uline {Scenario 1}:
             \begin{itemize}
-                \item Il cliente effettua un ordine all'operatore
-                \item L'operatore inserisce nel sistema pietanze, bevande e 
+                \item Il cliente effettua un ordine al cameriere
+                \item Il cameriere inserisce nel sistema pietanze, bevande e 
                     numero tavolo
-                \item Se tutto disponibile, l'operatore lo comunica al cliente
+                \item Se tutto disponibile, il cameriere lo comunica al cliente
                 \item Il cliente conferma l'ordine
                 \item Il cliente attende l'evasione dell'ordine
             \end{itemize}
             \item \uline {Scenario 2}:
             \begin{itemize}
-                \item Il cliente effettua un ordine all'operatore
-                \item L'operatore inserisce nel sistema pietanze, bevande e numero tavolo
+                \item Il cliente effettua un ordine al cameriere
+                \item Il cameriere inserisce nel sistema pietanze, bevande e numero tavolo
                 \item Una o pi\`u pietanze non \`e disponibile
-                \item L'operatore segnala la pietanza mancante al sistema centrale
-                \item L'operatore comunica l'impossibilit\`a di evadere l'ordine richiesto al cliente
+                \item Il cameriere segnala la pietanza mancante al sistema centrale
+                \item Il cameriere comunica l'impossibilit\`a di evadere l'ordine richiesto al cliente
             \end{itemize}
             \item \uline{Scenario 3}:
             \begin{itemize}
                 \item Il cliente effettua un ordine all'operatore
-                \item L'operatore inserisce nel sistema pietanze, bevande e numero tavolo
+                \item Il cameriere inserisce nel sistema pietanze, bevande e numero tavolo
                 \item Una o pi\`u pietanze non \`e presente nel database
-                \item L'operatore segnala l'errore del database al sistema centrale
-                \item L'operatore comunica l'impossibilit\`a di evadere l'ordine richiesto al cliente
+                \item Il cameriere segnala l'errore del database al sistema centrale
+                \item Il cameriere comunica l'impossibilit\`a di evadere l'ordine richiesto al cliente
             \end{itemize}
         \end{itemize}
     \end{itemize}
 
-    \item \uline {{\bf Chiamata prenotazione}}
+    \item \uline {{\bf Effettua prenotazione}}
     \begin{itemize}
-        \item {\bf Attore}: Operatore
+        \item {\bf Attore}: Cassiere
         \item {\bf Input}: Tipo Prenotazione, Orario Prenotazione, Numero Posti
         \item {\bf Precondizioni}: Disponibilit\`a Tavoli
         \item {\bf Output}: Prenotazione presa in carico dal sistema
@@ -50,23 +50,23 @@
         \begin{itemize}
             \item \uline{{\bf Scenario 1}}:
             \begin{itemize}
-                \item L'utente chiama per la prenotazione di un tavolo
-                \item L'operatore controlla la disponibilit\`a del tavolo
-                \item L'operatore comunica la disponibilit\`a del tavolo all'utente
+                \item L'utente effettua la prenotazione di un tavolo
+                \item Il cassiere controlla la disponibilit\`a del tavolo
+                \item Il cassiere comunica la disponibilit\`a del tavolo all'utente
                 \item L'utente conferma la prenotazione
             \end{itemize}
             \item \uline{{\bf Scenario 2}}:
             \begin{itemize}
-                \item L'utente chiama per la prenotazione di un men\`u fisso
-                \item L'operatore controlla la disponibilit\`a del men\`u
-                \item L'operatore comunica la disponibilit\`a del men\`u all'utente
+                \item L'utente effettua la prenotazione di un men\`u fisso
+                \item Il cassiere controlla la disponibilit\`a del men\`u
+                \item Il cassiere comunica la disponibilit\`a del men\`u all'utente
                 \item L'utente conferma la prenotazione
             \end{itemize}
-            \item \uline{{\bf Scenario 3}}
+            \item \uline{{\bf Scenario 3}}:
             \begin{itemize}
-                \item L'utente chiama per la prenotazione di una sala
-                \item L'operatore controlla la disponibilit\`a della sala
-                \item L'operatore comunica la disponibilit\`a della sala
+                \item L'utente effettua la prenotazione di una sala
+                \item Il cassiere controlla la disponibilit\`a della sala
+                \item Il cassiere comunica la disponibilit\`a della sala
                 \item L'utente concorda il men\`u con il proprietario
                 \item L'utente conferma la prenotazione
             \end{itemize}
@@ -82,18 +82,56 @@
         \item {\bf Postcondizioni}: Nessuna
         \item {\bf Descizione Scenari}:
         \begin{itemize}
-            \item \uline{Scenario 1}
+            \item \uline{Scenario 1}:
             \begin{itemize}
                 \item Il cliente richiede modifica di un ordine
-                \item Il cameriere effettua la verifica 
+                \item Il cameriere effettua la verifica
+                \item L'ordine non \`e evaso
+                \item Il cameriere comunica al cliente l'avvenuta modifica 
+            \end{itemize}
+            \item \uline{Scenario 2}:
+            \begin{itemize}
+                \item Il cliente richiede la modifica
+                \item Il cameriere effettua la verifica
+                \item La modifica \`e gi\`a evaso
+                \item Il cameriere comunica al cliente l'impossibilit\`a di effettuare la modifica
+            \end{itemize}
+            \item \uline{Scenario 3}:
+            \begin{itemize}
+                \item Il cliente richiede la cancellazione ordine
+                \item Il cameriere effettua la verifica sugli ordini in attesa
+                \item L'ordine non \`e evaso
+                \item Il cameriere comunica al cliente l'effettuata modifica
+            \end{itemize}
+            \item \uline{Scenario 4}:
+            \begin{itemize}
+                \item Il cliente richiede la cancellazione ordine
+                \item Il cameriere effettua la verifica sugli ordini in attesa
+                \item L'ordine \`e evaso
+                \item Il cameriere comunica al cliente l'impossibilit\`a di effettuare la modifica
+            \end{itemize}
+            \item \uline{Scenario 5}:
+            \begin{itemize}
+                \item Il cliente richiede l'aggiunta di un ordine
+                \item L'operatore inserisce nel sistema pietanze, bevande e 
+                    numero tavolo
+                \item Se tutto \`e disponibile il cameriere lo comunica al cliente 
+                \item Il cliente attende l'evasione dell'ordine
+            \end{itemize}
+            \item \uline{Scenario 6}:
+            \begin{itemize}
+                \item Il cliente richiede l'aggiunta di un ordine
+                \item L'operatore inserisce nel sistema pietanze, bevande e 
+                    numero tavolo
+                \item Se non tutto \`e disponibile il cameriere comunica al cliente l'impossibilit\`a 
+                    di effettuare l'aggiunta alla lista degli ordini 
             \end{itemize}
         \end{itemize}
     \end{itemize}
 
-    \item \uline {{\bf Cancellazione ordine}}
     \item {\bf Caso d'uso}: \uline{{\bf Richiesta Conto}}
     \begin{itemize}
-        \item {\bf Attore}: Operatore
+        \item {\bf Attore}: Cassiere
         \item {\bf Input}: Numero Tavolo, Tipo di Conto
         \item {\bf Precondizioni}: Palmare operatore connesso alla rete
         \item {\bf Output}: Conferma di stampa conto
@@ -103,18 +141,18 @@
             \item \uline{Scenario 1}:
             \begin{itemize}
                 \item Il cliente richiede il conto
-                \item L'operatore inserisce nel sistema il numero del tavolo e il 
+                \item Il cassiere inserisce nel sistema il numero del tavolo e il 
                     tipo di conto richiesto
-                \item Ottenute le informazioni, l'operatore le comunica al cliente
+                \item Ottenute le informazioni, il cassiere le comunica al cliente
             \end{itemize}
             \item \uline{Scenario 2}:
             \begin{itemize}
                 \item Il cliente richiede il conto
-                \item L'operatore inserisce nel sistema il numero del tavolo e il 
+                \item Il cassiere inserisce nel sistema il numero del tavolo e il 
                     tipo di conto richiesto
                 \item Il conto non \`e disponibile a causa di un errore della rete
-                \item L'operatore segnala un errore della sensori rete al sistema centrale
-                \item L'operatore comunica l'impossibilit\`a di il conto in real time e richiede
+                \item Il cassiere segnala un errore della sensori rete al sistema centrale
+                \item Il cassiere comunica l'impossibilit\`a di il conto in real time e richiede
                     le pietanze precedentemente ordinate.
             \end{itemize}
         \end{itemize}
@@ -150,14 +188,14 @@
         \begin{itemize}
             \item \uline{Scenario 1}
             \begin{itemize}
-                \item L'operatore inserisce nel sistema il nome del dipendente
-                \item L'operatore richiede al sistema l'assunzione del dipendente
+                \item Il gestore del personale inserisce nel sistema il nome del dipendente
+                \item Il gestore del personale richiede al sistema l'assunzione del dipendente
                 \item Il sistema conferma l'operazione
             \end{itemize}
             \item \uline{Scenario 2}
             \begin{itemize}
-                \item L'operatore inserisce nel sistema il nome del dipendente
-                \item L'operatore richiede al sistema il licenziamento del dipendente
+                \item Il gestore del personale inserisce nel sistema il nome del dipendente
+                \item Il gestore del personale richiede al sistema il licenziamento del dipendente
                 \item Il sistema conferma l'operazione
             \end{itemize}
         \end{itemize}     
@@ -201,7 +239,7 @@
 
     \item \uline {{\bf Verifica Scorte}}
     \begin{itemize}
-        \item {\bf Attore}: Operatore
+        \item {\bf Attore}: Cassiere
         \item {\bf Input}: Magazzino da visionare
         \item {\bf Precondizioni}: Nessuna
         \item {\bf Output}: Itemlist delle scorte presenti
@@ -211,15 +249,15 @@
         \begin{itemize}
             \item \uline{Scenario 1}
             \begin{itemize}
-                \item L'operatore richiede al sistema la visione delle scorte all'interno del magazzino
+                \item Il cassiere richiede al sistema la visione delle scorte all'interno del magazzino
                 \item Il sistema mostra la item list delle scorte
-                \item L'operatore visiona l'item list
+                \item Il cassiere visiona l'item list
             \end{itemize}
             \item \uline{Scenario 2}
             \begin{itemize}
                 \item Il sistema invia un messaggio di warning di "ammanchi" nel magazzino
-                \item L'operatore richieste l'item list degli "ammanchi" al sistema 
-                \item L'operatore effettua l'ordine per la fornitura
+                \item Il cassiere richieste l'item list degli "ammanchi" al sistema 
+                \item Il cassiere effettua l'ordine per la fornitura
             \end{itemize}
         \end{itemize}
     \end{itemize} 

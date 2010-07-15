@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.6.7)  11 JUN 2010 09:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.6.7)  15 JUL 2010 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -494,31 +494,33 @@ Capitolo 2.
 Capitolo 3.
 [9
 
-] [10]) [11] (./srs.aux) ) 
+] [10] [11] [12] [13] [14]) [15] (./srs.aux) ) 
 Here is how much of TeX's memory you used:
- 6417 strings out of 495052
- 89510 string characters out of 1182207
- 158753 words of memory out of 3000000
- 9376 multiletter control sequences out of 15000+50000
+ 6424 strings out of 495052
+ 89568 string characters out of 1182207
+ 159753 words of memory out of 3000000
+ 9378 multiletter control sequences out of 15000+50000
  20168 words of font info for 52 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 40i,5n,36p,310b,549s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec
-/ecbx1440.600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.
-600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </h
-ome/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/misdur
-/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/misdur/.texmf-va
-r/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/misdur/.texmf-var/fonts/pk
-/ljfour/jknappen/ec/ecbx1728.600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jk
-nappen/ec/eccc1440.600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecrm1440.600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1440.6
-00pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </ho
-me/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1728.600pk> </home/misdur/
-.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc2074.600pk></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on srs.pdf (12 pages, 197295 bytes).
+ 40i,5n,36p,310b,570s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/misdur/.texmf-var/fonts/p
+k/ljfour/jknappen/ec/ecbx1440.600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbi1200.600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec
+/tcrm1200.600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.
+600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </h
+ome/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/misdur
+/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/misdur/.texmf-va
+r/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/misdur/.texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecrm1440.600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecti1440.600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecbx2488.600pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1728.6
+00pk> </home/misdur/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc2074.600pk></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/latxfont/line10.pfb>
+Output written on srs.pdf (16 pages, 220319 bytes).
 PDF statistics:
- 585 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
+ 616 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
  182 words of extra memory for PDF output out of 10000 (max. 10000000)
 
